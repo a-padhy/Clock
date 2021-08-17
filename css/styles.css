@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #091921;
+  flex-direction: column;
+}
+
+/* Analog Clock */
+
+.AnalogClock {
+  height: 350px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/clock.png");
+  background-size: cover;
+  border: 4px solid #091921;
+  border-radius: 50%;
+  box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+    inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3),
+    inset 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.AnalogClock::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: rgb(7, 133, 236);
+  border-radius: 50%;
+  z-index: 10000;
+}
+
+.AnalogClock .hour,
+.AnalogClock .min,
+.AnalogClock .sec {
+  position: absolute;
+}
+
+.AnalogClock .hour,
+.hr {
+  width: 160px;
+  height: 160px;
+}
+
+.AnalogClock .min,
+.mn {
+  width: 190px;
+  height: 190px;
+}
+
+.AnalogClock .sec,
+.sc {
+  width: 230px;
+  height: 230px;
+}
+
+.hr,
+.mn,
+.sc {
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  border-radius: 50%;
+}
+
+.hr::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 80px;
+  background: #ff105e;
+  z-index: 10;
+  border-radius: 6px 6px 0 0;
+}
+
+.mn::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 90px;
+  background: yellow;
+  z-index: 11;
+  border-radius: 6px 6px 0 0;
+}
+
+.sc::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  background: rgb(7, 133, 236);
+  z-index: 11;
+  border-radius: 6px 6px 0 0;
+}
+
+/* Digital Clock */
+
+.digital {
+  height: 60px;
+  margin-top: 4%;
+  color: rgb(7, 133, 236);
+  font-size: 35px;
+  text-align: center;
+  font-family: Orbitron;
+  letter-spacing: 7px;
+}
+
+/* Attribution */
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.75rem;
+  line-height: 20px;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.6);
+  margin-bottom: 30px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: bold;
+}
+
+.attribution a:hover {
+  color: rgb(226, 226, 44);
+}
