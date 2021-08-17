@@ -7,7 +7,7 @@
 ### Links
 
 - Solution URL: [Code on GitHub](https://github.com/a-padhy/JS-Projects/tree/main/Clock)
-- Live Site URL: [Vercel Live URL](https://js-clock-theta.vercel.app/)
+- Live Site URL: [Vercel Live URL](https://ap-clock.vercel.app/)
 
 ## Author
 
